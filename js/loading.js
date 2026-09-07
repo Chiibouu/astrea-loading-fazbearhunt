@@ -1,6 +1,6 @@
 const CONFIG = {
     discordUrl: "https://discord.gg/6s3fxxAUYV",
-    siteUrl: "#",
+    siteUrl: "https://shop.astrea-deathrun.fr/",
 
     tips: [
         "Reste attentif aux bruits autour de toi.",
