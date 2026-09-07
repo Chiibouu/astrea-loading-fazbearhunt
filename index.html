@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Astrea - Fazbear Hunt</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="background"></div><div class="overlay"></div>
+  <main class="shell">
+    <header class="top">
+      <section class="player-card panel">
+        <img id="player-avatar" src="assets/player-placeholder.svg" alt="Avatar">
+        <div><span class="eyebrow">BIENVENUE</span><h2 id="player-name">Connexion...</h2><p>Connexion à Astrea Fazbear Hunt...</p></div>
+      </section>
+      <section class="brand">
+        <span>ASTREA</span><h1>DEATHRUN</h1>
+        <div class="status-row"><span id="status-text">CONNEXION EN COURS</span><b id="progress-value">0%</b></div>
+        <div class="progress"><div id="progress-bar"></div></div>
+        <small id="loading-file">Initialisation...</small>
+      </section>
+      <section class="music-card panel">
+          <img src="assets/music-cover.jpg" class="music-cover" alt="Musique">
+      
+          <div class="music-info">
+              <span class="eyebrow">EN ÉCOUTE</span>
+              <h2 id="music-title">Cat Chill</h2>
+              <p>Astrea Fazbear Hunt</p>
+      
+              <div id="music-visualizer" class="music-visualizer">
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+                  <span></span><span></span><span></span><span></span>
+              </div>
+          </div>
+      </section>
+    </header>
+
+    <section class="grid">
+        <article class="panel block about-block">
+            <div class="title">
+                <h3>
+                    <img src="assets/icons/cat.svg" class="title-icon" alt="">
+                    À PROPROS
+                </h3>
+                <span>COMMANDES</span>
+            </div>
+    
+            <div class="link-card">
+                <img src="assets/icons/discord.svg" class="card-icon" alt="">
+                <div>
+                    <b>!discord</b>
+                </div>
+            </div>
+    
+            <div class="link-card">
+                <img src="assets/icons/store.svg" class="card-icon" alt="">
+                <div>
+                    <b>!boutique</b>
+                </div>
+            </div>
+            <div class="link-card">
+                <img src="assets/icons/addons.svg" class="card-icon" alt="">
+                <div>
+                    <b>!addons</b>
+                </div>
+            </div>
+            <div class="link-card">
+                <img src="assets/icons/help.svg" class="card-icon" alt="">
+                <div>
+                    <b>!help</b>
+                </div>
+            </div>
+        </article>
+
+      <article class="panel block">
+        <div class="title">
+          <h3>
+            <img src="assets/icons/clipboard-list.svg" class="title-icon" alt="">
+            RÈGLEMENT
+          </h3>
+          <span>À LIRE AVANT DE JOUER</span>
+        </div>
+      
+        <div class="rules">
+          <div><b>01</b><span>Pas d'insultes, de provocation ou de propos et comportements inappropriés.</span></div>
+          <div><b>02</b><span>Pas de spam micro ou écrit.</span></div>
+          <div><b>03</b><span>Pas de cheat, hacks ou usebugs.</span></div>
+          <div><b>04</b><span>Pas de focus ou de team.</span></div>
+          <div><b>05</b><span>Pas de rush mini-jeux.</span></div>
+          <div><b>06</b><span>Pas de réactivation des pièges.</span></div>
+          <div><b>07</b><span>Pas de faux freeruns.</span></div>
+        </div>
+      </article>
+
+      <article class="panel block">
+        <div class="title">
+          <h3>
+            <img src="assets/icons/crown.svg" class="title-icon" alt="">
+            STAFF ACTUEL
+          </h3>
+          <span>ÉQUIPE ASTREA</span>
+        </div>
+      
+        <div class="staff">
+          <div class="staff-group">
+            <div class="staff-group-title">FONDATRICE</div>
+      
+            <div class="staff-row" data-steamid="76561198244481150">
+              <img src="assets/staff-placeholder.svg" alt="Avatar">
+              <div>
+                <b class="staff-name">Ayutsuka</b>
+                <span>Fondatrice</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="staff-group">
+            <div class="staff-group-title">ADMINISTRATEURS</div>
+      
+            <div class="staff-row" data-steamid="76561198064254680">
+              <img src="assets/staff-placeholder.svg" alt="Avatar">
+              <div>
+                <b class="staff-name">Yamini</b>
+                <span>Administrateur</span>
+              </div>
+            </div>
+      
+            <div class="staff-row" data-steamid="76561198261600157">
+              <img src="assets/staff-placeholder.svg" alt="Avatar">
+              <div>
+                <b class="staff-name">Reynnox</b>
+                <span>Administrateur</span>
+              </div>
+            </div>
+          </div>
+      
+          <div class="staff-group">
+            <div class="staff-group-title">DÉVELOPPEUR</div>
+      
+            <div class="staff-row" data-steamid="76561198089147767">
+              <img src="assets/staff-placeholder.svg" alt="Avatar">
+              <div>
+                <b class="staff-name">Chibou</b>
+                <span>Développeur</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      
+      <article class="panel block server">
+        <div class="title">
+          <h3>
+            <img src="assets/icons/info.svg" class="title-icon" alt="">
+            INFOS SERVEUR
+          </h3>
+          <span>SESSION ACTUELLE</span>
+        </div>
+      
+        <div class="map-preview">
+          <img id="map-image" src="assets/map-placeholder.svg" alt="Map">
+      
+          <div class="fade"></div>
+      
+          <div class="map-info">
+            <span class="map-label">
+              <img src="assets/icons/map-pin.svg" class="small-icon" alt="">
+              MAP ACTUELLE
+            </span>
+      
+            <b id="map-name">fazbear hunt_atomic_warfare</b>
+          </div>
+        </div>
+      
+        <div class="stats">
+          <div>
+            <div class="stat-label">
+              <img src="assets/icons/user.svg" class="stat-icon" alt="">
+              <span>JOUEURS</span>
+            </div>
+      
+            <b>
+              <span id="players-current">?</span> /
+              <span id="players-max">32</span>
+            </b>
+          </div>
+      
+          <div>
+            <div class="stat-label">
+              <img src="assets/icons/gamepad-2.svg" class="stat-icon" alt="">
+              <span>MODE</span>
+            </div>
+      
+            <b id="gamemode-name">Fazbear Hunt</b>
+          </div>
+        </div>
+      </article>
+    </section>
+
+  <footer class="panel tip">
+    <img src="assets/icons/lightbulb.svg" class="tip-icon" alt="">
+    <b>CONSEIL</b>
+    <span id="tip-text">Observe les pièges avant de foncer.</span>
+  </footer>
+  </main>
+  <audio id="loading-music" autoplay loop preload="auto">
+    <source src="assets/music/loading.mp3" type="audio/mpeg">
+  </audio>
+  <script src="js/loading.js"></script>
+</body>
+</html>
