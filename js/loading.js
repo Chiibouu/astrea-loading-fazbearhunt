@@ -3,20 +3,27 @@ const CONFIG = {
     siteUrl: "#",
 
     tips: [
-        "Un bon chat retombe toujours sur ses pattes.",
-        "Observe les pièges avant de foncer.",
-        "N'active pas tous tes pièges d'un coup.",
-        "Un freerun n'est actif que si tous les Deaths l'acceptent à temps.",
-        "Les meilleurs temps viennent surtout de la connaissance de la map.",
-        "Observe les mouvements des Runners avant d'activer tes pièges.",
-        "Observer les autres joueur peut t'être très utile.",
-        "9 vies ne suffisent pas toujours pour finir une map."
+        "Reste attentif aux bruits autour de toi.",
+        "Ne reste pas trop longtemps au même endroit.",
+        "Observe bien ton environnement avant d'avancer.",
+        "La discrétion peut parfois être plus utile que la vitesse.",
+        "Regarde derrière toi de temps en temps.",
+        "Certains chemins sont plus sûrs que d'autres.",
+        "Écoute avant de traverser une zone dangereuse.",
+        "Si quelque chose te paraît suspect, éloigne-toi.",
+        "Rester groupé peut aider, mais peut aussi vous rendre plus visibles.",
+        "Les endroits sombres ne sont pas toujours les plus dangereux.",
+        "Un bon timing peut faire la différence entre survivre et se faire attraper.",
+        "Apprends les maps, elles peuvent te sauver la vie.",
+        "Ne panique pas si tu es poursuivi.",
+        "Utilise les obstacles pour casser la ligne de vue.",
+        "Sur Astrea, même les couloirs peuvent réserver des surprises."
     ]
 };
 
 const state = {
-    map: "fazbear hunt_atomic_warfare",
-    maxPlayers: 24,
+    map: "fazbear hunt_school",
+    maxPlayers: 16,
     filesTotal: 0,
     filesNeeded: 0,
     isGmod: false
@@ -57,12 +64,10 @@ function setMap(mapname) {
     const mapName = document.getElementById("map-name");
     const mapImage = document.getElementById("map-image");
 
-    // Affiche le nom de la map
     if (mapName) {
         mapName.textContent = mapname;
     }
 
-    // Charge automatiquement son image
     if (mapImage) {
         mapImage.onerror = function () {
             console.warn(`[Astrea] Image introuvable pour ${mapname}, utilisation de forgot.png`);
@@ -645,3 +650,4 @@ async function loadServerPlayers() {
         currentElement.textContent = "?";
     }
 }
+
